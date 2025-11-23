@@ -25,23 +25,7 @@
 <body>
 
 
-    <div class="disclaimer">
-        <div class="dl-left">
-            <img src="assets/logo.png" alt="SFE Spirits Logo"/>
-            <p class="d-heading">Welcome to SFE Spirits</p>
-            <p class="d-subheading">Are you aged 21 or older ?</p>
-
-            <p class="dis-message">Sorry, your age does not permit you to enter at this time.</p>
-            <div class="btn-wrapper">
-                <a href="#wrapper" class="yes-btn">Yes</a>
-                <a href="#no" class="yes-btn">No</a>
-            </div>
-            <p class="norm-text">By entering this site you agree to the Terms<br/>& Conditiions and Privacy Policy</p>
-        </div>
-        <div class="dl-right">
-            <img src="assets/dl-right.png"/>
-        </div>
-    </div>
+    
 
 
 
@@ -70,11 +54,11 @@
                 <i class="fas fa-bars"></i>
             </button>
             <ul id="menu-main-menu" class="navbar-nav" role="menu">
-                <li role="none"><a href="index.html" data-page="home-page" class="nav-link active-link" role="menuitem">Home</a>
+                <li role="none"><a href="index.html" data-page="home-page" class="nav-link" role="menuitem">Home</a>
                 </li>
                 <li role="none"><a href="our-story.html" data-page="story-page" class="nav-link" role="menuitem">Our
                     Story</a></li>
-                <li role="none"><a href="the-harbour-collection.html" data-page="spirits-page" class="nav-link" role="menuitem">The
+                <li role="none"><a href="the-harbour-collection.html" data-page="spirits-page" class="nav-link active-link" role="menuitem">The
                     Harbour Collection</a>
                 </li>
                 <li role="none"><a href="contact-us.html" data-page="contact-page" class="nav-link" role="menuitem">Contact
@@ -83,71 +67,7 @@
         </nav>
     </header>
 
-    <main id="home-page" class="page-content" style="display: block;">
-        <section class="header fade-in-section">
-            <h2>SFE Spirits</h2>
-            <h3 class="sfe-tagline">Smooth. Fine. Exotic.</h3>
-            <p>SFE Spirits presents to you a world of refined indulgence — where craftsmanship meets character. From the
-                crisp clarity of our Gin, distilled to perfection with handpicked botanicals, to the deep, amber warmth
-                of our Whiskey, aged with patience and passion — every bottle we create carries the essence of
-                distinction.</p>
-
-            <img src="assets/7.png" alt="SFE Spirits bottles" class="hero-image"/>
-
-            <p>Born from a vision to blend heritage with innovation, SFE Spirits celebrates the art of fine drinking —
-                <span class="highlight-sfe">smooth</span> in spirit, <span class="highlight-sfe">fine</span> flavour,
-                and timelessly <span class="highlight-sfe">exotic</span> in experience. Raise your glass. Discover your
-                spirit.</p>
-
-            <img src="assets/2.png" alt="Bottles and craftsmanship tools" class="gin-image"/>
-        </section>
-        <section class="feature-section fade-in-section testimonial">
-            <h2>From Our Patrons</h2>
-            <div class="testimonial-slider" aria-roledescription="carousel" aria-label="Customer Testimonials">
-                <div class="slides-container">
-                    <div class="slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
-                        <blockquote>"Simply the smoothest blended whiskey I've had the pleasure of tasting. It has a
-                            permanent place on my bar cart. Truly fit for a king."
-                        </blockquote>
-                        <cite>– Arjun Mehta, Bengaluru</cite></div>
-                    <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
-                        <blockquote>"Bought this as a gift for my father, a lifelong whiskey connoisseur. He was
-                            thoroughly impressed with the complexity and balance. A new favourite in our family."
-                        </blockquote>
-                        <cite>– Priya Sharma, Mumbai</cite></div>
-                    <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
-                        <blockquote>"The perfect blend of Indian warmth and Scotch character. It’s my go-to for a
-                            relaxing evening after a long week at work."
-                        </blockquote>
-                        <cite>– Rohan Kapoor, Delhi</cite></div>
-                </div>
-                <button class="slider-btn prev-btn" aria-label="Previous testimonial slide"><i
-                        class="fas fa-chevron-left"></i></button>
-                <button class="slider-btn next-btn" aria-label="Next testimonial slide"><i
-                        class="fas fa-chevron-right"></i>
-                </button>
-                <div class="dots-container" role="tablist" aria-label="Testimonial slide navigation"></div>
-            </div>
-        </section>
-    </main>
-
-    <main id="story-page" class="page-content" style="display: none;">
-        <section class="fade-in-section">
-            <h2>Our Story</h2>
-            <p>At SFE Spirits, every bottle tells a story — one of passion, precision, and purpose. What began as a
-                pursuit of perfection soon turned into a promise — to craft spirits that are not just smooth to sip, but
-                soulful to remember.</p>
-            <img src="assets/9.png" alt="SFE Spirits craftsmanship"
-                 class="hero-image"/>
-            <p>Born from Britain's coastal legacy and reimagined through modern craftsmanship, The Harbour Collection
-                celebrates the timeless bond between land, sea, and spirit. Each bottle in the collection reflects the
-                soul of the harbours that once connected the world — places where fine cargo, rare ingredients, and
-                royal tradition converged.</p>
-            <p><strong>We don't just make spirits. We bottle experiences — Smooth. Fine. Exotic.</strong></p>
-        </section>
-    </main>
-
-    <main id="spirits-page" class="page-content" style="display: none;">
+    <main class="page-content">
         <section>
             <h2>The Harbour Collection</h2>
             <div class="tabs-container">
@@ -308,39 +228,7 @@
         </section>
     </main>
 
-    <main id="contact-page" class="page-content" style="display: none;">
-        <section class="fade-in-section">
-            <h2>Contact Us</h2>
 
-            <div class="contact-grid">
-                <div class="contact-section">
-                    <h3>For Trade & Alliance</h3>
-                    <p>To feature our spirits in your esteemed establishment or for career opportunities, please
-                        contact our team.</p>
-                    <p>
-                        <strong>Email:</strong> sales@sfeuk.co<br>
-                        <strong>Phone:</strong> 080-48664217
-                    </p>
-                </div>
-            </div>
-
-            <div class="contact-logo-section" style="margin: 40px auto 20px; max-width: 250px;">
-                <img src="assets/logo.png" alt="SFE Spirits Logo" style="width: 100%; height: auto;"/>
-            </div>
-
-            <div class="address-section" style="max-width: 600px; margin: 0 auto; text-align: center;">
-                <p>
-                    <strong>India Office (Registered Address):</strong><br>
-                    No 45 , Annamali Arcade, 2nd Floor 1st Cross, Hosur Main Road, Wilson Garden, Bengaluru, Karnataka
-                    560027
-                </p>
-                <p>
-                    <strong>UK Office:</strong><br>
-                    2nd floor, West Wing, 10 Harborne Road, Edgbaston, Birmingham, England. B15 3AA
-                </p>
-            </div>
-        </section>
-    </main>
 
     <footer class="footer-container">
         <div class="social-menu">

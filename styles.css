@@ -133,7 +133,93 @@ img {
     position: relative;
     padding-bottom: 5px;
 }
-
+.disclaimer {
+    position: fixed;
+    z-index: 99999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #100F0E;
+    font-family: "Playfair Display", serif;
+}
+.dl-left {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dl-left img {
+    height: 130px;
+}
+.dl-right {
+    width: 50%;
+}
+p.d-heading {
+    font-size: 45px;
+    margin: 50px 0px 40px;
+    color: #ffffff;
+    font-weight: 700;
+}
+p.d-subheading {
+    font-size: 30px;
+    margin: 0px 0px 70px;
+    color:#ffffff;
+}
+.btn-wrapper {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+p.dis-message {
+    font-family: 'Lato';
+    color: #d87474;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    display: none;
+}
+p.norm-text {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 110px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+a.yes-btn {
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    transition: all ease 0.2s;
+}
+a.yes-btn:hover {
+    background-color: #ffffff;
+    color: #100f0e;
+    transition: all ease 0.2s;
+}
+a.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+}
+a.whatsapp img {
+    height: 70px;
+}
+.privacy-policy-section a {
+    color: #ffffff;
+    text-decoration: none;
+}
 .nav-link:hover {
     color: #fff;
     transform: translateY(-2px);
@@ -901,6 +987,65 @@ cite {
 
 /* Override mobile-specific styles for the new slider to work correctly */
 @media (max-width: 768px) {
+    a.yes-btn {
+        font-size: 20px;
+        height: 45px;
+    }
+    p.norm-text {
+        font-size: 15px;
+        color: #ffffff;
+        margin-top: 30px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+    }
+    p.dis-message {
+        font-family: 'Lato';
+        color: #d87474;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    .page-content {
+        padding: 20px 0 0px;
+    }
+    p.d-subheading {
+        font-size: 20px;
+        margin: 0px 0px 30px;
+        color: #ffffff;
+    }
+    p.d-heading {
+        font-size: 30px;
+        margin: 30px 0px 10px;
+        color: #ffffff;
+        font-weight: 700;
+    }
+    .dl-left img {
+        height: 90px;
+    }
+    .dl-left {
+        width: 100%;
+        height: 70vh;
+        padding-top: 20px;
+    }
+    .dl-right {
+        width: 100%;
+        height: 30vh;
+    }
+    .dl-right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0px -110px;
+    }
+    .disclaimer {
+        flex-direction: column;
+    }
+    a.whatsapp img {
+        height: 50px;
+    }
+    #wrapper {
+        padding: 60px 15px 0;
+    }
     /* The static image pair styles are now irrelevant, but we ensure the slider looks good */
     .image-slider {
         margin: 20px auto;
@@ -918,4 +1063,3 @@ cite {
     .image-slider .next-btn { right: 5px; }
 }
 /* --- End New CSS for Home Page Image Slider --- */
-}
