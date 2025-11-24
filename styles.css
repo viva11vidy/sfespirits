@@ -18,21 +18,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Adjust the main wrapper padding to prevent content being hidden behind the fixed banner */
 #wrapper {
-    max-width: 1400px;
+    width: 90vw;
+    max-width: 2000px;
     margin: 0 auto;
-    /* Increased top padding to push content below the 40px tall banner */
-    padding: 40px 40px 0;
-}
-/* --- End New CSS for Launch Banner --- */
-
-/* Adjust the main wrapper padding to prevent content being hidden behind the fixed banner */
-#wrapper {
-    max-width: 1400px;
-    margin: 0 auto;
-    /* Increased top padding to push content below the 40px tall banner */
-    padding: 60px 60px 0;
+    padding: 60px 0px 0;
 }
 /* --- End New CSS for Launch Banner --- */
 
@@ -88,7 +78,7 @@ h6 { font-size: 1.2rem; margin: 0 0 8px 0; color: #d4af37; }
 }
 
 p {
-    max-width: 80ch;
+    max-width: 100%;
     margin: 0 auto 20px auto;
     font-size: clamp(1rem, 2.5vw, 1.15rem);
     color: #c0c0c0;
@@ -258,7 +248,7 @@ a.whatsapp img {
 
 section {
     text-align: center;
-    padding: 80px 40px;
+    padding: 80px 80px;
     margin-bottom: 40px;
     background-color: #1a1a1a;
     border-radius: 12px;
@@ -272,6 +262,7 @@ section {
     height: auto;
     max-width: 100%;
     object-fit: initial;
+    margin-bottom: 40px;
     transition: transform 0.3s ease;
 }
 
@@ -511,7 +502,7 @@ cite {
 /* === HARBOUR COLLECTION IMAGE STYLING (MANAGEABLE SIZE) === */
 .spirit-section .large-spirit-image {
     /* FINAL FIX: Set a consistent, manageable height */
-    max-width: 900px; /* Constrain the maximum width */
+    max-width: 80%; /* Constrain the maximum width */
     margin: 0 auto 40px auto; /* Center the image and add margin below */
     /* Use 'contain' to ensure full product visibility without cropping */
     border-radius: 8px; /* Add slight rounding */
@@ -552,7 +543,7 @@ cite {
 
 /* --- New CSS for Ingredients Layout (Image Left, Text Right) --- */
 .ingredients-flex-container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 40px auto;
     display: flex;
     gap: 40px;
@@ -672,7 +663,7 @@ cite {
     text-align: center;
     padding: 50px 20px;
     border-top: 1px solid #222;
-    margin-top: 60px;
+    margin-top: 0px;
 }
 .social-menu a {
     color: #c0c0c0;
