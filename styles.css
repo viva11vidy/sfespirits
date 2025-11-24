@@ -991,10 +991,11 @@ cite {
     }
     p.dis-message {
         font-family: 'Lato';
-        color: #d87474;
+        color: #ffa4a4;
         margin-top: -20px;
         margin-bottom: 20px;
         width: 80%;
+        text-shadow: 2px 2px black;
     }
     .page-content {
         padding: 20px 0 0px;
@@ -1015,18 +1016,26 @@ cite {
     }
     .dl-left {
         width: 100%;
-        height: 70vh;
+        height: 100vh;
         padding-top: 20px;
+        position: absolute;
+        z-index: 2;
+        top: 0px;
+        background-color: #00000094;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .dl-right {
         width: 100%;
-        height: 30vh;
+        height: 100vh;
+        position: absolute;
     }
     .dl-right img {
-        width: 100%;
+        width: auto;
         height: 100%;
         object-fit: cover;
-        object-position: 0px -110px;
     }
     .disclaimer {
         flex-direction: column;
