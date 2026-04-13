@@ -17,7 +17,13 @@
     z-index: 10000; /* Ensure it's above all other elements */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
-
+.cw {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 20px;
+}
 #wrapper {
     width: 90vw;
     max-width: 2000px;
