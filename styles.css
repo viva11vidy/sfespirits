@@ -24,6 +24,9 @@
     text-align: left;
     gap: 20px;
 }
+.cw a:first-child {
+    min-width: 50px;
+}
 #wrapper {
     width: 90vw;
     max-width: 2000px;
