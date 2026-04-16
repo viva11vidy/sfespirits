@@ -26,6 +26,7 @@
 }
 .cw a:first-child {
     min-width: 50px;
+    color: #d4af37;
 }
 #wrapper {
     width: 90vw;
